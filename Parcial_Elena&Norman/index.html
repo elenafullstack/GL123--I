@@ -5,39 +5,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>LINGSCARS</title>
 </head>
 <body>
     <header>
         <h1 class="title">LINGSCARS</h1>
-        <nav>
+        <nav class="nav">
             <ul>
                 <li class="item"><a href="">Home</a></li>
                 <li class="item"><a href="">Cars</a></li>
                 <li class="item"><a href="">Vans</a></li>
                 <li class="item"><a href="">About us</a></li>
                 <li class="item"><a href="">Contact</a></li>
+                <li class="item" style="float:right"><a href="">Account</a>
+                <ul>
+                    <li id="#item-account"><a href="">Login</a></li>
+                    <li id="#item-account"><a href="">Register</a></li>   
+                </ul>
+                </li>
+                <li class="search-toggle" style="float:right;">
+                    <input type="text" placeholder="Type & Hit Enter">
+                    <img src="img/search_icon.png" alt="">
+                </li>
             </ul>
         </nav>
-        <section class="primero">
-            <img src="img/car1.jpg" width="100%"alt="">
+        <section class="box-header">
             <section class="firstgroup">
                 <h1>Britain's biggest individual seller of cars</h1>
-                <button>Get your car</button>
+                <button id="myBtn" style="cursor: pointer;">Get your car</button>
                 <button>Offers</button>
             </section>
+        <section class="formguide">
+            <section class="inside-form">
+                <center><h2>Please Guide us</h2></center>
+                <form action="">
+                    <form>
+                        <div class="input">
+                            <input type="text" class="input-field" placeholder="Norman Sparks" required/><br>
+                            <label class="input-label">Full name</label>
+                        </div>
+                        <div class="input">
+                            <input type="email" class="input-field" placeholder="normansparks@gmail.com" required/><br>
+                            <label class="input-label">Mail</label>
+                        </div>
+                        <div class="input">
+                            <select name="cars" id="cars" form="carform">
+                                <option value="volvo">Volvo</option>
+                                <option value="Honda">Honda</option>
+                                <option value="Bmw">BMW</option>
+                                <option value="audi">Audi</option>
+                              </select>
+                            <label class="input-label">Choose a car:</label><br>
+                        </div>
+                        <br>
+                        <div class="action">
+                            <button class="action-button">Get started</button>
+                        </div>
+                      </form>
+                </form>
+            </section>
+        </section>
         </section>
     </header>
-
-  
     <section class="segundo">
         <h1>Models</h1>
-        <img src="img/bmw.jpg" class="foto"alt="">
-        <img src="img/merzedes.png"class="foto" width="200" alt="">
-        <img src="img/nissan.png" class="foto" width="300" alt="">
-        <img src="img/audi.png" class="foto" width="300" alt="">
+        <img src="img/bmw.jpg" class="foto" width="219" alt="">
+        <img src="img/merzedes.png" class="foto" width="218" alt="">
+        <img src="img/nissan.png" class="foto" width="251" alt="">
+        <img src="img/audi.png" class="foto" width="309" alt="">
         <img src="img/wolkswagen.png" class="foto" width="200" alt="">
+        <img src="img/Honda.png" class="foto" width="370" alt="">
     </section>
-    
+    <footer class="footer">
+        <div class="footer__addr">
+          <h1 class="footer__logo">LINGSCARS</h1>
+              
+          <h2>Contact</h2>
+          
+          <address>
+            5534 PANAMÁ In. The World 22193-10212<br>
+                
+            <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+          </address>
+        </div>
+        
+        <ul class="footer__nav">
+          <li>
+            <h2>Lorem</h2>
+      
+            <ul>
+              <li>
+                <a href="#">Lorem</a>
+              </li>
+      
+              <li>
+                <a href="#">Lorem</a>
+              </li>
+                  
+              <li>
+                <a href="#">Lorem</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <h2>Legal</h2>
+            
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              
+              <li>
+                <a href="#">Terms of Use</a>
+              </li>
+              
+              <li>
+                <a href="#">Sitemap</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+        <div class="legal">
+          <p>&copy; 2022 LINGSCARS. All rights reserved.</p>
+        </div>
+      </footer>
 </body>
 </html>

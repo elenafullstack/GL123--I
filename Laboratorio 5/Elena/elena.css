@@ -38,13 +38,6 @@ img {
 
   }
 
-a:hover {
-     color:rgb(126, 204, 185);
-  }
-
-  a {
-    color:black;
-  }
 
 .abierta, .idiomas {
   text-decoration: underline;

@@ -17,7 +17,7 @@ ul {
 }
 
 
-h1 {
+header h1 {
 
     color:#8f90cf;
 }
@@ -120,6 +120,7 @@ li {
 }
 
 footer {
+    margin-top: 2%;
     padding: 3%;
     display: flex;
     justify-content:space-between;
@@ -129,4 +130,19 @@ footer {
 .footerpic {
     width: 150px;
     height: 150px;
+}
+
+.picturesection {
+    position: relative;
+}
+
+.picturesection h1 {
+    position: absolute;
+    font-size: 40px;
+    top:12%;
+    left: 5%;
+    text-shadow: 0 2px 1px #0000, 
+      -1px 3px 1px #90968f, 
+      -2px 5px 1px #90968f;
+
 }

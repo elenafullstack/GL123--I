@@ -1,21 +1,17 @@
 
 body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:0%;
 }
 
  
-ul {
-
- 
+ul { 
    
     display: flex;
     justify-content: center;
     align-items: center;
-    
-
 
 }
-
 
 header h1 {
 
@@ -27,9 +23,7 @@ header h1 {
     list-style: none;
     margin: 1%;
     border-radius: 25px;
-
     padding: 2%;
- 
 
 }
 
@@ -37,8 +31,7 @@ header h1 {
     text-decoration: none;
     list-style: none;
     color: black;
-
-    
+   
 }
 
 .item1 {
@@ -79,12 +72,6 @@ font-size: 25px;
 
 
 
-/*article {
-    text-decoration: none;
-    list-style: none;
-}*/
-
-
 .articles {
     display: flex;
     justify-content: space-evenly;
@@ -98,22 +85,11 @@ li {
     list-style: none
 }
 
-.uno {
+.articulo{
     width: 30%;
     margin: 2%;
-    position: relative;
-}
 
-.dos {
-    width: 30%;
-    margin: 2%;
 }
-
-.tres {
-    width: 30%;
-    margin: 2%;
-}
-
 .ver {
    padding: 2%;
    color:#8f90cf;

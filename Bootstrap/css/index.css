@@ -1,0 +1,293 @@
+.cards-wrapper {
+    display: flex;
+}
+.image-wrapper {
+    height: 15vw;
+}
+
+.image-wrapper img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.carousel-control-prev,.carousel-control-next{
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel-control-prev span,
+.carousel-control-next span{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.align-center {
+text-align: center;
+}
+
+.no-wrap {
+white-space: nowrap;
+}
+
+#apps-panner {
+position: relative;
+width: 100%;
+top: 0px;
+float: left;
+background-color: #fff;
+padding-bottom: 0px;
+overflow: hidden;
+}
+
+#apps-row1 {
+position: relative;
+}
+#apps-row2 {
+position: relative;
+}
+#apps-row3 {
+position: relative;
+}
+.no-animation {
+animation: initial !important;
+transform: initial !important;
+transition: initial !important;
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 639px) {
+
+.card:not(:first-child){
+    display: none;
+    margin: 0 .5em;
+
+}
+    
+#apps-panner {
+    height: 380px;
+}
+
+#apps-row1 {
+    width: 6496px;
+    height: 120px;
+    background: transparent url(../img/paisajes.png) left center repeat-x;
+    margin-left: 0px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+#apps-row2 {
+    width: 6496px;
+    height: 120px;
+    background: transparent url(../img/paisajes.png) center center repeat-x;
+    margin-left: 0px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+    #apps-row3 {
+    width: 6496px;
+    height: 120px;
+    background: transparent url(../img/paisajes.png) right center repeat-x;
+    margin-left: 0px;
+    margin-right: 8px;
+    margin-bottom: 0px;
+}
+
+.apps-pan-row1 {
+    animation: slideAppsMobile 30s linear infinite;
+}
+.apps-pan-row2 {
+    animation: slideAppsMobile 40s linear infinite;
+}
+.apps-pan-row3 {
+    animation: slideAppsMobile 50s linear infinite;
+}
+
+
+@keyframes slideAppsMobile {
+    0%{
+    transform: translate3d(0, 0, 0);
+    }
+    100%{
+    transform: translate3d(-1624px, 0, 0);
+    }
+}
+
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 640px) and (max-width: 1023px) {
+.card {
+    margin: 0 .5em;
+    width: calc(100%/3);
+}
+
+#apps-panner {
+    height: 380px;
+}
+
+#apps-row1 {
+    width: 6496px;
+    height: 120px;
+    background: transparent url(../img/paisajes.png) left center repeat-x;
+    margin-left: 0px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+#apps-row2 {
+    width: 6496px;
+    height: 120px;
+    background: transparent url(../img/paisajes.png) center center repeat-x;
+    margin-left: 0px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+    #apps-row3 {
+    width: 6496px;
+    height: 120px;
+    background: transparent url(../img/paisajes.png) right center repeat-x;
+    margin-left: 0px;
+    margin-right: 8px;
+    margin-bottom: 0px;
+}
+
+
+.apps-pan-row1 {
+    animation: slideAppsMobile 30s linear infinite;
+}
+.apps-pan-row2 {
+    animation: slideAppsMobile 40s linear infinite;
+}
+.apps-pan-row3 {
+    animation: slideAppsMobile 50s linear infinite;
+}
+
+
+@keyframes slideAppsMobile {
+    0%{
+    transform: translate3d(0, 0, 0);
+    }
+    100%{
+    transform: translate3d(-1624px, 0, 0);
+    }
+}
+}
+
+/* LAPTOP */
+
+@media only screen and (min-width: 1024px) and (max-width: 1349px) {
+.card {
+    margin: 0 .5em;
+    width: calc(100%/3);
+}
+
+#apps-panner {
+    height: 500px;
+}
+
+#apps-row1 {
+    width: 8680px;
+    height: 160px;
+    background: transparent url(../img/paisajes.png) left center repeat-x;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#apps-row2 {
+    width: 8680px;
+    height: 160px;
+    background: transparent url(../img/paisajes.png) center center repeat-x;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+    #apps-row3 {
+    width: 8680px;
+    height: 160px;
+    background: transparent url(../img/paisajes.png) right center repeat-x;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+
+.apps-pan-row1 {
+    animation: slideAppsDesktop 50s linear infinite;
+}
+.apps-pan-row2 {
+    animation: slideAppsDesktop 60s linear infinite;
+}
+.apps-pan-row3 {
+    animation: slideAppsDesktop 70s linear infinite;
+}
+
+@keyframes slideAppsDesktop {
+    0%{
+    transform: translate3d(0, 0, 0);
+    }
+    100%{
+    transform: translate3d(-2170px, 0, 0);
+    }
+}
+}
+
+/* DESKTOP */
+
+@media only screen and (min-width: 1350px) {
+.card {
+    margin: 0 .5em;
+    width: calc(100%/3);
+}
+
+#apps-row1 {
+    width: 8680px;
+    height: 160px;
+    background: transparent url(../img/paisajes.png) left center repeat-x;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#apps-row2 {
+    width: 8680px;
+    height: 160px;
+    background: transparent url(../img/paisajes.png) center center repeat-x;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#apps-row3 {
+    width: 8680px;
+    height: 160px;
+    background: transparent url(../img/paisajes.png) right center repeat-x;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+
+.apps-pan-row1 {
+    animation: slideAppsDesktop 50s linear infinite;
+}
+.apps-pan-row2 {
+    animation: slideAppsDesktop 60s linear infinite;
+}
+    .apps-pan-row3 {
+    animation: slideAppsDesktop 70s linear infinite;
+}
+
+@keyframes slideAppsDesktop {
+    0%{
+    transform: translate3d(0, 0, 0);
+    }
+    100%{
+    transform: translate3d(-2170px, 0, 0);
+    }
+}
+}
+

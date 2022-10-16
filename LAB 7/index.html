@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+ <script src=script.js></script>
+
+ <header>
+     <h1>Laboratorio 7 Desarrollo software IV</h1>
+ </header>
+
+ <p id="ptexto">Texto de ejemplo</p>
+    <table>
+        <tr>
+        <th>Numero</th>
+        <th>Descripción del ejemplo</th>
+        <th>Ejemplo</th>
+        <th>Botón para activar el ejemplo</th>
+       
+        </th>
+        </tr>
+
+        <tr>
+            <td>1.1</td>
+            <td>Cambiar el color de párrafo</td>
+            <td id="primero">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, minima. Quisquam vel modi qui quas eveniet eos rem quia, mollitia minus porro quam, ut architecto, officiis in ullam? Repellat, nihil.</td>
+            <td><button onclick=primero()>Cambia el color</button></td>
+        </tr>
+        <tr>
+            <td>1.2</td>
+            <td>Añadir texto a un párrafo</td>
+            <td id="segundo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum esse quasi rem ullam, voluptas, repellendus optio ex magni veritatis fugit animi vero accusamus sunt nulla reprehenderit dolorem id porro?</td>
+            <td><button onclick=segundo()>Añadir texto</button></td>
+        </tr>
+        <tr>
+            <td>1.3</td>
+            <td id>Concatenar el valor de dos textos </td>
+            <td id="texto3">Texto colocado en el punto 1.3</td>
+            <td><button onclick =tres()>Concatenar</button></td>
+        </tr>
+        <tr>
+            <td>1.4</td>
+            <td>Eliminar valores de una lista despegable (3 opciones primero) </td>
+            <td>
+                <select name="" id="tercera">
+                    <option value="1">Opcion1</option>
+                    <option value="2">Opcion2</option>
+                    <option value="3">Opcion3</option>
+                </select>
+            </td>
+            <td><button onclick=cuatro()>Eliminar</button></td>
+        </tr>
+        <tr>
+            <td>1.5</td>
+            <td>Un botón que lleva a un video de youtube</td>
+            <td></td>
+            <td><button onclick=cinco()>Video de youtube</button></td>
+        </tr>
+        <tr>
+            <td>1.6</td>
+            <td>Mandar un menasje al usuario</td>
+            <td></td>
+            <td><button onclick=seis()>Mensaje</button></td>
+        </tr>
+        <tr>
+            <td>1.7</td>
+            <td>Mandar el nombre, a la consola de js del navegador </td>
+            <td id="texto7">Nombre de 1.7</td>
+            <td><button onclick=siete()>Mandar</button></td>
+        </tr>
+        <tr>
+            <td>1.8</td>
+            <td>Un check, e imprimir su estado </td>
+            <td id="ocho"><input type="checkbox" id="input8"></td>
+            <td><button onclick=ocho()>Ve estado</button></td>
+        </tr>
+        <tr>
+            <td>1.9</td>
+            <td>Un radio e imprimir su estado </td>
+            <td id="nueve"><input type="radio" id="input9"></td>
+            <td><button onclick=nueve()>Ve estado</button></td>
+        </tr>
+        <tr>
+            <td>1.10</td>
+            <td>Una validación de un campo</td>
+            <td><input type="text" id="textbox" oninput=diez()></td>
+            <td></td>
+        </tr>
+  
+</table>
+
+<footer>
+    <img class="footerpic" src="img/utp.jpeg" alt="">
+    <h3>Norman Sparks</h3>
+    <h3>Elena Rima</h3>
+   
+    <img class="footerpic" src="img/fisc.png" alt="">
+</footer>
+    
+</body>
+</html>

@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href='styles/fonts3.css' rel='stylesheet'>
     <title>Paricial 2</title>
 </head>
 <body>
-   <!-- <img class=background src="background.png" alt="">-->
     <header>
         
         <nav>
             <div class="bignav">
                 <h3 class="logo">Adventurous</h3>
+                <div class="dropdown">
+                    <button onclick="Menu()" class="dropbtn">Menu</button>
+                    <div id="myDropdown" class="dropdown-content" style="margin-left: -50px;">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#contact">Contact</a>
+                      </div>
+                </div>
                 <ul class="navItems">
                     <li><a href="">Home</a></li>
                     <li><a href="">About us</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
          
@@ -50,20 +57,65 @@
             
         <button class="start">Get started</button>
         </section>
-
-        <section class="container2">
-            <section class="subclass2">
-                <img src="img/hiking.jpeg" class="img2" alt="">
-                <h3>Hiking tours with advanced guides</h3>
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni commodi odit repudiandae quis cupiditate id ab, numquam, fugit in velit doloremque repellendus laboriosam sunt veniam eligendi corrupti. Est, aspernatur at.</h4>
-            </section>
-            <section class="subclass2">
-                <img src="img/friends.jpeg" class="img2" alt="">
-                <h3>Reunions from friends around the world</h3>
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni commodi odit repudiandae quis cupiditate id ab, numquam, fugit in velit doloremque repellendus laboriosam sunt veniam eligendi corrupti. Est, aspernatur at.</h4>
-            </section>
-        </section>
-            
     </header>
+    <section class="container2">
+        <section class="subclass2">
+            <img src="img/hiking.jpeg" class="img2" alt="">
+            <h3>Hiking tours with advanced guides</h3>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni commodi odit repudiandae quis cupiditate id ab, numquam, fugit in velit doloremque repellendus laboriosam sunt veniam eligendi corrupti. Est, aspernatur at.</h4>
+            <center><button class="start">LEARN MORE</button></center>
+        </section>
+        <section class="subclass2">
+            <img src="img/friends.jpeg" class="img2" alt="">
+            <h3>Reunions from friends around the world</h3>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni commodi odit repudiandae quis cupiditate id ab, numquam, fugit in velit doloremque repellendus laboriosam sunt veniam eligendi corrupti. Est, aspernatur at.</h4>
+            <center><button class="start">LEARN MORE</button></center>
+        </section>
+        <br>
+    </section>
+    <section class="container3" id="contact">
+        <section class="title">
+        <h1>Get in Touch</h1>
+        </section>
+        <section class="form">
+            <form action="#form">
+                <section class="input1">
+                <section class="formgroup1">
+                    <p>Name</p>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </section>
+                <section class="formgroup2">
+                    <p>Email</p>
+                    <input type="email" id="email" name="email" placeholder="Your email..">
+                </section>
+                    </section>
+                <p>Message</p>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:0;width: 550%;"></textarea>
+                <br>
+                <center><input type="submit" value="Submit"></center>
+            </form>
+        </section>
+    </section>
+    <section class="credits">
+        <h6>© 2022 Adventurous. All rights reserved.</h6>
+    </section>
+    <script>
+        function Menu() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+    </script>
 </body>
 </html>
